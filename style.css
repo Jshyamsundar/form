@@ -1,4 +1,4 @@
-
+ 
   @import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
 *{
 margin: 0;
@@ -6,49 +6,61 @@ padding: 0;
 box-sizing: border-box;
 font-family: 'Farsan', cursive;
 }
-.mainSection{
-    margin-top: 30px;
-    display: flex;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
+body{
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgb(34, 193, 195,1)0%,rgb(121,32,153,1)86%);
+    background-attachment: fixed;
+    margin: 0;
 }
-.boxContainer{
-    background-color: aqua;
-    padding: 30px 60px;
-    align-items: center;
-    border: 2px solid black;
+#form{
+    width: 400px;
+    margin: 5vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 40px;
+
 }
 .boxContainer h2{
+    text-align: center;
+    text-transform: capitalize;
     font-size: 40px;
-    text-transform: uppercase;
-    margin: 20px 0px;
+    color: #792099;
 }
-.forms .form-label{
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-.forms .form-control{
-    font-size: 20px;
-}
-.forms  input{
-    height: 40px;
-    width: 100%;
-    margin-top: 5px;
-}
-button{
-    padding: 5px 5px;
-    /* outline: none; */
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-button:hover{
-    background-color: brown;
+#form button{
+    background-color: #792099;
     color: white;
+    border:  1px solid #792099;
+    border-radius: 8px;
+    padding: 5px;
+    font-size:20px;
+    margin: 20px 0px;
+    width: 100%;
 }
-.form-control.error input{
-    border: 2px solid green;
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
-.form-control.succuess input{
-    border:  2px solid red;
+.inputs input{
+    border-radius: 5px;
+    font-size: 20px;
+    /* margin-top: 8px; */
+    padding: 3px;
+    outline: none;
+    border: 1px solid black; 
+}
+.inputs label{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.inputs .error{
+    color: red;
+    font-size: 18px;
+    /* margin-top: 5px; */
+}
+.inputs.success input{
+    border-color: #0cc477;
+}
+.inputs.error input{
+    border-color: red;
 }
