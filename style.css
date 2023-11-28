@@ -1,0 +1,54 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Farsan', cursive;
+}
+.mainSection{
+    margin-top: 30px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.boxContainer{
+    background-color: aqua;
+    padding: 30px 60px;
+    align-items: center;
+    border: 2px solid black;
+}
+.boxContainer h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+.forms .form-label{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.forms .form-control{
+    font-size: 20px;
+}
+.forms  input{
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+}
+button{
+    padding: 5px 5px;
+    /* outline: none; */
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+button:hover{
+    background-color: brown;
+    color: white;
+}
+.form-control.error input{
+    border: 2px solid green;
+}
+.form-control.succuess input{
+    border:  2px solid red;
+}
